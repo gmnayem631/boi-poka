@@ -1,9 +1,11 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { addToStoredDB } from '../../utilities/addToDb';
 
 const BookDetails = () => {
   const { id } = useParams();
   const allBooks = useLoaderData();
+  // const numberId = parseInt(id);
 
   const singleBook = allBooks.find((book) => book.bookId === parseInt(id));
 
@@ -19,6 +21,11 @@ const BookDetails = () => {
     yearOfPublishing,
     rating,
   } = singleBook;
+
+  const handleMarkAsRead = (id) => {
+    console.log(id);
+    addToStoredDB(id);
+  };
   return (
     <div className="my-16 flex justify-around gap-12">
       {/* Image */}
@@ -50,7 +57,8 @@ const BookDetails = () => {
 
         <div className="mt-6 border-t border-dashed border-gray-400"></div>
 
-        <div className="w-75 rounded-lg py-4">
+        {/* Book Details */}
+        <div className="w-2xl rounded-lg py-4">
           <div className="space-y-2 text-gray-800">
             <p>
               <span className="font-medium text-gray-600">Number of Pages: </span>
@@ -71,11 +79,14 @@ const BookDetails = () => {
           </div>
 
           <div className="mt-4 flex gap-3">
-            <button className="cursor-pointer rounded-md border px-4 py-2 text-gray-700 hover:bg-gray-200">
-              Read
+            <button
+              onClick={() => handleMarkAsRead(id)}
+              className="cursor-pointer rounded-md border px-4 py-2 text-gray-700 hover:bg-gray-200"
+            >
+              Mark as Read
             </button>
             <button className="cursor-pointer rounded-md bg-teal-500 px-4 py-2 text-white hover:bg-teal-600">
-              Wishlist
+              Add to Wishlist
             </button>
           </div>
         </div>
