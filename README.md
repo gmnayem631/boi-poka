@@ -1,12 +1,65 @@
-# React + Vite
+# [Boi Poka](https://clever-bonbon-2fb7dd.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Boi Poka](https://clever-bonbon-2fb7dd.netlify.app/)  
+_A beautiful React-based book discovery & reading tracker app_
 
-Currently, two official plugins are available:
+**Live Demo:** [https://clever-bonbon-2fb7dd.netlify.app/](https://clever-bonbon-2fb7dd.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 About the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Boi Poka** (বই পোকা) is a modern, responsive single-page web application for book lovers. It lets you:
+
+- Browse a curated collection of books on the **Home** page
+- View rich **Book Details**
+- Maintain your personal **Read List**
+- Keep track of **PagesToRead** (books you plan to read next)
+
+Built from scratch on top of the official Vite + React template, the app features clean component architecture, smooth client-side routing, and a delightful UI with loading states.
+
+Whether you're a casual reader or a hardcore bookworm, Boi Poka makes managing your reading journey simple and enjoyable.
+
+---
+
+## ✨ Features
+
+- **Home Page** – Hero banner + book showcase
+- **Book Details Page** – Full information for any selected book
+- **Read List** – Add/remove books you've read or are reading
+- **Pages to Read** – Plan your future reads
+- **Responsive Design** – Works perfectly on mobile, tablet, and desktop
+- **Fast Navigation** – Powered by custom React Router setup
+- **Loading Spinner** – Smooth UX during data handling
+- **Reusable Components** – Header, Footer, Book cards, ReadListCard, Banner, etc.
+
+---
+
+## 🛠 Tech Stack
+
+| Technology       | Purpose                        |
+| ---------------- | ------------------------------ |
+| **React**        | UI library                     |
+| **Vite**         | Build tool & dev server        |
+| **React Router** | Client-side routing            |
+| **JavaScript**   | Core logic (94.8% of codebase) |
+| **CSS**          | Styling                        |
+| **Netlify**      | Instant deployment             |
+
+No external UI libraries — everything is hand-crafted for performance and simplicity.
+
+---
+
+## 📦 Installation & Local Development
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/gmnayem631/boi-poka.git
+cd boi-poka
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+```
