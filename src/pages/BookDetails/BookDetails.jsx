@@ -1,6 +1,7 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
 import { addToStoredDB } from '../../utilities/addToDb';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -78,16 +79,21 @@ const BookDetails = () => {
             </p>
           </div>
 
-          <div className="mt-4 flex gap-3">
-            <button
-              onClick={() => handleMarkAsRead(id)}
-              className="cursor-pointer rounded-md border px-4 py-2 text-gray-700 hover:bg-gray-200"
-            >
-              Mark as Read
-            </button>
-            <button className="cursor-pointer rounded-md bg-teal-500 px-4 py-2 text-white hover:bg-teal-600">
-              Add to Wishlist
-            </button>
+          <div className="mt-4 flex justify-between">
+            <div className="flex gap-3">
+              <button
+                onClick={() => handleMarkAsRead(id)}
+                className="cursor-pointer rounded-md border px-4 py-2 text-gray-700 hover:bg-gray-200"
+              >
+                Mark as Read
+              </button>
+              <button className="cursor-pointer rounded-md bg-teal-500 px-4 py-2 text-white hover:bg-teal-600">
+                Add to Wishlist
+              </button>
+            </div>
+            <Link to={'/'} className="btn btn-outline flex items-center justify-center gap-2">
+              <FaArrowLeft /> Back to Home
+            </Link>
           </div>
         </div>
       </div>
