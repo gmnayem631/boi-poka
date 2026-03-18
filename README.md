@@ -1,6 +1,5 @@
 # [Boi Poka](https://clever-bonbon-2fb7dd.netlify.app/)
 
-![Boi Poka](https://clever-bonbon-2fb7dd.netlify.app/)  
 _A beautiful React-based book discovery & reading tracker app_
 
 **Live Demo:** [https://clever-bonbon-2fb7dd.netlify.app/](https://clever-bonbon-2fb7dd.netlify.app/)
@@ -37,16 +36,14 @@ Whether you're a casual reader or a hardcore bookworm, Boi Poka makes managing y
 
 ## 🛠 Tech Stack
 
-| Technology       | Purpose                        |
-| ---------------- | ------------------------------ |
-| **React**        | UI library                     |
-| **Vite**         | Build tool & dev server        |
-| **React Router** | Client-side routing            |
-| **JavaScript**   | Core logic (94.8% of codebase) |
-| **CSS**          | Styling                        |
-| **Netlify**      | Instant deployment             |
-
-No external UI libraries — everything is hand-crafted for performance and simplicity.
+| Technology       | Purpose                                 |
+| ---------------- | --------------------------------------- |
+| **React**        | UI library                              |
+| **Vite**         | Build tool & fast dev server            |
+| **React Router** | Client-side routing                     |
+| **Tailwind CSS** | Utility-first styling                   |
+| **DaisyUI**      | Beautiful components on top of Tailwind |
+| **Netlify**      | Hosting & automatic deploys             |
 
 ---
 
@@ -63,3 +60,27 @@ npm install
 # 3. Start development server
 npm run dev
 ```
+
+Open http://localhost:5173 in your browser.
+
+## 📁 Project Structure
+
+src/
+├── components/
+│ ├── Banner/
+│ ├── Book/
+│ ├── Books/
+│ ├── Footer/
+│ ├── Header/
+│ ├── ReadListCard/
+│ └── Spinner/
+├── pages/
+│ ├── BookDetails/
+│ ├── Home/
+│ ├── PagesToRead/
+│ ├── ReadList/
+│ └── Root/
+├── Routes/
+│ └── Route.jsx
+├── utilities/
+└── assets/
