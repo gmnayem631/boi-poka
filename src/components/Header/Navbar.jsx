@@ -1,21 +1,22 @@
-import React from "react";
+import React from 'react';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
   const links = (
     <>
       <li>
-        <a>Home</a>
+        <NavLink to={'/'}>Home</NavLink>
       </li>
       <li>
-        <a>Listed Books</a>
+        <NavLink>Listed Books</NavLink>
       </li>
       <li>
-        <a>Pages to Read</a>
+        <NavLink>Pages to Read</NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100 rounded-2xl shadow-sm work-sans">
+    <div className="navbar bg-base-100 work-sans rounded-2xl shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,13 +27,13 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
+              {' '}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />{' '}
             </svg>
           </div>
           <ul
@@ -42,7 +43,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="font-bold text-xl ml-3 mt-3 cursor-pointer">Boi Poka</a>
+        <a className="mt-3 ml-3 cursor-pointer text-xl font-bold">Boi Poka</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
