@@ -3,7 +3,6 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { IoDocumentText, IoPeopleOutline } from 'react-icons/io5';
 
 const ReadListCard = ({ readBook }) => {
-  console.log(readBook);
   const {
     image,
     bookName,
