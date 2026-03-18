@@ -5,13 +5,19 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'/'} className={'mr-3'}>
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink>Listed Books</NavLink>
+        <NavLink to={'/readList'} className={'mr-3'}>
+          Listed Books
+        </NavLink>
       </li>
       <li>
-        <NavLink>Pages to Read</NavLink>
+        <NavLink to={'/toRead'} className={'mr-3'}>
+          Pages to Read
+        </NavLink>
       </li>
     </>
   );
@@ -38,7 +44,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mr-3 w-52 p-2 shadow"
           >
             {links}
           </ul>
