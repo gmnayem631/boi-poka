@@ -65,6 +65,7 @@ Open http://localhost:5173 in your browser.
 
 ## 📁 Project Structure
 
+```
 src/
 ├── components/
 │ ├── Banner/
@@ -84,3 +85,4 @@ src/
 │ └── Route.jsx
 ├── utilities/
 └── assets/
+```
